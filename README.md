@@ -1,18 +1,24 @@
 # 👻 Motoko Bootcamp 2023 
 
+This is my version of the core-project-starter-pack. 
+
 A huge thanks to [Iri](https://twitter.com/iriasviel) (ex-Motoko Bootcamp student | Motoko dev at Finterest) for contributing to the core project. 
-You can use this repository as a starting point for your the [core project](https://github.com/motoko-bootcamp/motokobootcamp-2023) of [Motoko Bootcamp 2023](https://github.com/motoko-bootcamp/motokobootcamp-2023).
 
-<p align="center"> <img src="./home.png" width="600px" style="border: 2px solid black;"> </p>
-<p align="center">To see the navigation bar hover on the left.</p>
+We want to build **a DAO that manages a simple website** and grants voting power based on the [Motoko Bootcamp token](../../core_project/PROJECT.MD#-token-faucet). 
+We will need the following canisters:
+- A backend canister: this canister will be responsible for managing the logic of our DAO: keeping track of members, proposals, votes & taking actions whenever a proposal is passed.
+You will have to write the entire logic for this canister yourself!
 
-A few more things:
-- To build the core project you should complete the code that is missing for the dao canister and webpage canister.
-- Using this skeleton is NOT a requirement. This repository is only meant to help you get started. 
-- The core project has to be submitted before the deadline - more infos on #submit.
-- [Plug wallet is used] and we recommend using it for this core project to make your life easier: mainly because **Principal** for users will be the same between canisters (not the case with Internet Identity which makes the whole project more complex).
+- A webpage canister: this canister will be responsible for storing a webpage, answering http_request. This webpage will only contains basic text and the text will be updated upon vote of the DAO.
+You will have to write the entire code for this canister yourself!
 
-- There are probably some little bugs and errors - the code has been quickly hacked to help you get on track and focus on Motoko but this is far from being a perfect example.
+- An interface canister: this canister will be responsible for storing the interface and enable a user-friendly access to our DAO. From this interface users should be able to join the DAO, create proposals and vote on proposals. 
+Since this week is focused on Motoko and creating an interface requires other skills and knowledge. We will provide code samples that you'll just have to complete. For the interface we will use a framework called [Svelte](https://svelte.dev/). If you are not familiar with Svelte - no worries! We will explain how the code is organized. 
+ 
+- A ledger canister for the Motoko Bootcamp token: this canister is reponsible for controlling the balance of MB tokens for all users, processing transactions, minting & burning MB tokens.
+This canister will be the same for all students. We have already created this canister and you will only have to interface with it. This token is following the ICRC_1 standard.
+You can mint as much Motoko Bootcamp token as you need during the week. For more information - read [the dedicated section](../../core_project/PROJECT.MD#-token-faucet)
+
 
 ## Instructions to deploy 
 Install the necessary packages.
@@ -37,3 +43,5 @@ There are 2 versions of this app deployed on the IC.
 
 ## Common (strange) error
 - When using Plug wallet you might encounter the following: "Uncaught (in promise) Error: There isn't enough space to open the popup" - if that's the case make sure to reduce your browser windows and give some space for the popup windows to appear.
+
+
