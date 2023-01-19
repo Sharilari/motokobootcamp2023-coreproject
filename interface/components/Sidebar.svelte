@@ -24,7 +24,6 @@
 <nav class:expanded={isExpanded} on:mouseover={() => mouseover()}>
   <ul>
     {#if isExpanded}
-      <-- svelte-ignore a11y-click-events-have-key-events -->
       <li on:click={() => handleHome()}>🏠 Home</li>
       <li on:click={() => handleView()}>🚀 View</li>
       <li on:click={() => handleCreate()}>⭐️ Create</li>
