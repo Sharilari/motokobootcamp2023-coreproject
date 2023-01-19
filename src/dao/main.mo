@@ -1,6 +1,4 @@
 actor {
-    //My discord is: iri#1598
-    //Feel free to DM me any question.
     type Proposal = {};// TO DEFINE;
 
     public shared({caller}) func submit_proposal(this_payload : Text) : async {#Ok : Proposal; #Err : Text} {
