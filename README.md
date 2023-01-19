@@ -19,6 +19,14 @@ Since this week is focused on Motoko and creating an interface requires other sk
 This canister will be the same for all students. We have already created this canister and you will only have to interface with it. This token is following the ICRC_1 standard.
 You can mint as much Motoko Bootcamp token as you need during the week. For more information - read [the dedicated section](../../core_project/PROJECT.MD#-token-faucet)
 
+## Day 3: 
+Your task for today is to fully implement the webpage canister for the core project. You should be able to do it from the code we've seen today.
+
+💀 HARDCORE MODE: Implement certified variables to verify the content by the canister served under ic0.app. This is optional but will greatly improve your chances to graduate at the top of the promotion.
+
+## Day 4:
+For today you'll have to implement the datastructures for storing proposals & votes inside the DAO canister. This task is fairly vague because they are a lot of different ways to go about that but basically at the end of today you should be able to performs CRUD operations on your DAO canister and being able to upgrade your canister without loosing the data!
+
 
 ## Instructions to deploy 
 Install the necessary packages.
